@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> OXIMOROS - Nosotros </title>
+    <meta charset= "utf-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <style type="text/css">
+        .jumbotron{
+            margin: 30px;
+        }
+    </style>
+    <style>
+body {
+    background-color:  gray ;
+}
+
+h4 { 
+    color: lightpink;
+    text-align: center;
+}
+h1 {
+    color: pink;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
+        <h1 class="text-uppercase mb-0">¡Formulario exitoso!</h1>
+    </div>
+</header>
+
+<section id="inputs">
+    <div class="container">
+        <h3>{{form}}</h3>
+  <p><em>{{gracias}}</em></p>
+
+   <div class="container">
+      <h2>La reserva quedó para el día : {{Fecha}}
+        <h2> A nombre de : {{Nombre}}
+        <h3> Para: {{Servicios}}
+        <h3>El email ingresado es: {{Email}}
+                <h5>¿Resivirá información sobre OXIMOROS?:  {{check}}
+    </div>
+  
+        
+    </div>
+</section>
+
+{% include 'miapp/footer.html' %}
+</body>
+</html>
+
+

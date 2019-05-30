@@ -1,0 +1,27 @@
+from peluqueria.models import *
+
+
+clientes = Clientes.objects.all()
+
+
+
+mariano = Clientes(nombre_completo = "Mariano Suarez Salas", rut = "20074765-8", telefono = "97211810", correo = "mass@hotmail.com")
+mariano.save()
+
+
+
+mariano = Clientes.objects.get(nombre_completo = "Mariano Suarez Salas")
+mariano.correo = "mass@gmail.com"
+mariano.save()
+
+
+
+mariano = Clientes.objects.get(nombre_completo = "Mariano Suarez Salas")
+mariano.delete()
+
+
+
+productos_loreal = Inventario.objects.filter(marca_producto = "Loreal")
+
+
+infoMariano = clientes.objects.filter(nombre_completo) = "Mariano Suarez")
